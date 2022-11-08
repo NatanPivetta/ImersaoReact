@@ -1,0 +1,35 @@
+{
+    "name": "Natan Pivetta",
+    "job": "Web Developer",
+    "github": "NatanPivetta",
+
+    "playlist": {
+        "jogos": [
+            {
+                "title": "Vid1",
+                "url": "url",
+                "thumb": "thumbnail do video"
+            },
+            {
+                "title": "Vid2",
+                "url": "url",
+                "thumb": "thumbnail do video"
+            }
+
+        ],
+        "front-end": [
+            {
+                "title": "Vid3",
+                "url": "url",
+                "thumb": "thumbnail do video"
+            },
+            {
+                "title": "Vid4",
+                "url": "url",
+                "thumb": "thumbnail do video"
+            }
+        ]
+
+    }
+
+}
