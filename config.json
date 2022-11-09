@@ -20,14 +20,14 @@
         ],
         "front-end": [
             {
-                "title": "Vid3",
-                "url": "url",
-                "thumb": "thumbnail do video"
+                "title": "How To Create This Advanced Credit Card Form With CSS/JavaScript",
+                "url": "https://www.youtube.com/watch?v=dpccMFOYtHM",
+                "thumb": "https://i.ytimg.com/vi/dpccMFOYtHM/hqdefault.jpg?"
             },
             {
-                "title": "Vid4",
-                "url": "url",
-                "thumb": "thumbnail do video"
+                "title": "Can I Beat The King Of CSS Again? - CSS Battle",
+                "url": "https://www.youtube.com/watch?v=4ya4wpDgy_o",
+                "thumb": "https://i.ytimg.com/vi/4ya4wpDgy_o/hqdefault.jpg?"
             }
         ]
 
