@@ -2,18 +2,19 @@
     "name": "Natan Pivetta",
     "job": "Web Developer",
     "github": "NatanPivetta",
+    "bg": "https://images.unsplash.com/photo-1537884944318-390069bb8665?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
 
     "playlists": {
-        "jogos": [
+        "Ciência": [
             {
-                "title": "Vid1",
-                "url": "url",
-                "thumb": "thumbnail do video"
+                "title": "A História do Homem que Descobriu a Eletricidade",
+                "url": "https://www.youtube.com/watch?v=D5iC6IjCYtk",
+                "thumb": "https://i.ytimg.com/vi/D5iC6IjCYtk/hqdefault.jpg?"
             },
             {
-                "title": "Vid2",
-                "url": "url",
-                "thumb": "thumbnail do video"
+                "title": "Por que Alienígenas NÃO VÃO ser assim?",
+                "url": "https://www.youtube.com/watch?v=O_NE5VleUL4",
+                "thumb": "https://i.ytimg.com/vi/O_NE5VleUL4/hqdefault.jpg?"
             }
 
         ],
@@ -30,6 +31,20 @@
             }
         ]
 
-    }
+    },
 
+    "favorites": [
+            {
+                "user": "Fábio Akita",
+                "url": "https://www.youtube.com/c/FabioAkita1990",
+                "thumb": "https://yt3.ggpht.com/ytc/AMLnZu-rihMwxuXoZ2IjdwvfXegytnGVYquLdSBhRf5-ZOM=s88-c-k-c0x00ffffff-no-rj"
+            },
+            {
+                "user": "Ciência Todo Dia",
+                "url": "https://www.youtube.com/c/CienciaTodoDia",
+                "thumb": "https://yt3.ggpht.com/ytc/AMLnZu_I9SKhqEqL2YuI7M5-D4oVBtRfQB0lXVQ1FGsAAA=s88-c-k-c0x00ffffff-no-rj"
+            }
+
+    ]
 }
+

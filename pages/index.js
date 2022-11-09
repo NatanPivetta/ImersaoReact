@@ -56,9 +56,19 @@ const StyledHeader = styled.div`
         gap: 16px;
     }
 `;
+
+const StyledBanner = styled.div`
+    background-size: cover;
+    background-position-y: center;
+    background-color: aliceblue;
+    background-image: url(${({ bg }) => bg});
+    /* background-image: url(${config.bg}); */
+    height: 230px;
+`;
 function Header() {
     return (
         <StyledHeader>
+            <StyledBanner bg={config.bg} />
             {/* <img src="banner" /> */}
             <section className="user-info">
                 <img src={`https://github.com/${config.github}.png`} />
@@ -107,3 +117,4 @@ function Timeline(propriedades) {
         </StyledTimeline>
     )
 }
+
