@@ -1,26 +1,30 @@
-import Head from "next/head";
 import config from "../config.json";
 import styled from "styled-components";
 import { CSSReset } from "../src/components/CSSReset";
 import Menu from "../src/components/Menu";
-import StyledTimeline from "../src/components/Timeline";
-
+import { StyledTimeline } from "../src/components/Timeline";
 
 function HomePage() {
-    const HomePage = { backgroundColor: "red" };
-    // const mensagem = 'Bem bindo ao AluraTube!'
+    const estilosDaHomePage = {
+        // backgroundColor: "red" 
+    };
 
-
-    console.log(config.playlist);
+    // console.log(config.playlists);
 
     return (
         <>
             <CSSReset />
-            <div style={HomePage}>
+            <div style={{
+                display: "flex",
+                flexDirection: "column",
+                flex: 1,
+                // backgroundColor: "red",
+            }}>
                 <Menu />
                 <Header />
-                <Timeline playlist={config.playlist} />
-
+                <Timeline playlists={config.playlists}>
+                    Conteúdo
+                </Timeline>
             </div>
         </>
     );
@@ -34,29 +38,28 @@ export default HomePage
 //             Menu
 //         </div>
 //     )
-
 // }
 
+
 const StyledHeader = styled.div`
-    img{
+    img {
         width: 80px;
         height: 80px;
         border-radius: 50%;
     }
-
-    .user-info{
+    .user-info {
         margin-top: 50px;
         display: flex;
         align-items: center;
         width: 100%;
         padding: 16px 32px;
         gap: 16px;
-
     }
 `;
 function Header() {
     return (
         <StyledHeader>
+            {/* <img src="banner" /> */}
             <section className="user-info">
                 <img src={`https://github.com/${config.github}.png`} />
                 <div>
@@ -72,19 +75,20 @@ function Header() {
     )
 }
 
-function Timeline(props) {
-    // console.log("Dentro do componente", props.playlist);
-    const playlistNames = Object.keys(props.playlist);
-    // Laço For: Statemente
-    // Laço For Each: Retorno por expressão
-    // Utilizar map
+function Timeline(propriedades) {
+    // console.log("Dentro do componente", propriedades.playlists);
+    const playlistNames = Object.keys(propriedades.playlists);
+    // Statement
+    // Retorno por expressão
     return (
-        <div>
-            {playlistNames.map((playlistNames) => { //arrow function no lugar de: function(playlistNames)
-                const videos = props.playlist[playlistNames];
+        <StyledTimeline>
+            {playlistNames.map((playlistName) => {
+                const videos = propriedades.playlists[playlistName];
+                console.log(playlistName);
+                console.log(videos);
                 return (
                     <section>
-                        <h2>{playlistNames}</h2>
+                        <h2>{playlistName}</h2>
                         <div>
                             {videos.map((video) => {
                                 return (
@@ -100,7 +104,6 @@ function Timeline(props) {
                     </section>
                 )
             })}
-        </div>
+        </StyledTimeline>
     )
 }
-
