@@ -13,7 +13,6 @@ function HomePage() {
 
     return (
         <>
-            <CSSReset />
             <div style={{
                 display: "flex",
                 flexDirection: "column",
@@ -43,6 +42,9 @@ export default HomePage
 
 
 const StyledHeader = styled.div`
+
+    background-color: ${({theme}) => theme.backgroundLevel1};
+
     img {
         width: 80px;
         height: 80px;
