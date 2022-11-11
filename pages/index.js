@@ -25,6 +25,7 @@ function HomePage() {
                 <Timeline searchValue={valorDoFiltro} playlists={config.playlists}>
                     Conteúdo
                 </Timeline>
+                {/* <Favorites favoritos={config.favoritos} /> */}
             </div>
         </>
     );
@@ -43,7 +44,7 @@ export default HomePage
 
 const StyledHeader = styled.div`
 
-    background-color: ${({theme}) => theme.backgroundLevel1};
+    background-color: ${({ theme }) => theme.backgroundLevel1};
 
     img {
         width: 80px;
@@ -59,6 +60,7 @@ const StyledHeader = styled.div`
     }
 `;
 const StyledBanner = styled.div`
+    background-size: cover;
     background-color: blue;
     background-image: url(${({ bg }) => bg});
     /* background-image: url(${config.bg}); */
@@ -121,3 +123,78 @@ function Timeline({ searchValue, ...propriedades }) {
         </StyledTimeline>
     )
 }
+
+
+// const StyledFav = styled.div`
+    
+    
+//     .user-info {
+//         display: flex;
+//         align-items: center;
+//         width: 100%;
+//         padding: 16px;
+//         gap: 16px;
+//     }
+//     img {
+//         /* FavoriteCard */
+        
+//         border-radius: 50%;
+
+//         /* Auto layout */
+
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         padding: 8px;
+//         gap: 8px;
+
+//         width: 100px;
+//         height: 100px;
+
+
+//         /* Inside auto layout */
+
+//         /* flex: none;
+//         order: 0;
+//         flex-grow: 0; */
+//     }
+//     p{
+//         font-size: small;
+//         font-weight: lighter;
+//         padding: 8px;
+//     }
+// `;
+
+// function Favorites({ searchValue, ...propriedades }) {
+//     // console.log("Dentro do componente", propriedades.playlists);
+//     const favNames = Object.keys(propriedades.favoritos);
+//     // Statement
+//     // Retorno por expressão
+//     return (
+//         <StyledFav>
+//             {favNames.map((favName) => {
+//                 const favs = propriedades.favNames[favName];
+//                 // console.log(playlistName);
+//                 // console.log(videos);
+//                 return (
+//                     <section key={favName}>
+//                         <h2>{favName}</h2>
+//                         <div>
+//                             {favs
+//                                 .map((fav) => {
+//                                     return (
+//                                         <a key={fav.url} href={fav.url}>
+//                                             <img src={fav.thumb} />
+//                                             <span>
+//                                                 {fav.user}
+//                                             </span>
+//                                         </a>
+//                                     )
+//                                 })}
+//                         </div>
+//                     </section>
+//                 )
+//             })}
+//         </StyledFav>
+//     )
+// }
